@@ -17,8 +17,8 @@
 html,
 body {
     height: 100%;
+    max-width: 1440px;
     margin: 0;
-    background-color: var(--light-gray);
     font-family: 'Karla';
     font-size: var(--font-size);
 }
@@ -30,4 +30,32 @@ body {
     align-items: center;
     font-weight: 300;
 
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.bottom {
+    display: flex;
+}
+
+.price {
+    background-color: var(--cyan);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.info {
+    background-color: var(--light-gray);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    
 }
