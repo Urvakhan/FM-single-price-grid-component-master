@@ -9,6 +9,8 @@
     --grayish-blue: hsl(218, 22%, 67%);
     --white: rgb(255, 255, 255);
     --font-size: 16px;
+    --base-padding: 2rem;
+
 }
 
 * {
@@ -43,18 +45,29 @@ main {
     min-width: 650px;
 }
 
+p {
+    display: flex;
+    margin: 0;
+    margin-bottom: .35rem;
+}
+
 .top {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    padding: var(--base-padding);
+
 }
 
 h2 {
-    color: var(--cyan)
+    color: var(--cyan);
+    margin-top: 0;
+    font-size: 1.5rem;
+
 }
 
-a {
+.guarantee {
     color: var(--bright-yellow)
 }
 
@@ -66,16 +79,23 @@ a {
 
 .bottom-section {
     width: 50%;
-    padding: 1rem;
+    padding: var(--base-padding);
 }
 
 button {
     display: flex;
     align-self: center;
+    justify-content: center;
     background-color: var(--bright-yellow);
     border-radius: 10px;
+    border: none;
     font-family: 'Karla';
     color: white;
+    padding: 1rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 15px 0 0 0;
 }
 
 .price {
@@ -88,6 +108,17 @@ button {
 
 }
 
+span {
+    font-size: 2rem;
+    margin-right: 1rem;
+}
+
+.ppm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .info {
     background-color: var(--cyan-bright);
     display: flex;
@@ -96,4 +127,15 @@ button {
     flex-direction: column;
     border-radius: 0 0 10px 0;
            
+}
+
+ul {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    color: var(--light-gray);
+    font-size: .8rem;
 }
